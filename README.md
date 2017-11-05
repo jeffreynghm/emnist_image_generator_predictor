@@ -21,7 +21,7 @@ The model with the best performance on the validation set will be selected, and 
 ## Dataset
 Both models take handwritten images from the EMNIST dataset[1] as training and validation data.  For simplification purposes, the EMNIST Balanced Dataset will be used.
 
-According to [1], the Balanced Dataset contains 47 classes, including both upper and lower case alphabets.  It should be noted that since characters such as s C, I, J, K, L, M, O, P, S, U, V, W, X, Y and Z have relatively similar upper and lower case letters, therefore the samples of these characters are merged into one single class.  As a result, only 47 classes (including 10 digits) are available.  The focus of this demonstration is on English characters and hence the digit classes will be removed.
+According to [1], the Balanced Dataset contains 47 classes, including both upper and lower case alphabets.  It should be noted that since characters such as s C, I, J, K, L, M, O, P, S, U, V, W, X, Y and Z have relatively similar upper and lower case letters, therefore the samples of these characters are merged into one single class (Only the Upper case class is available).  As a result, only 47 classes (including 10 digits) are available.  The focus of this demonstration is on English characters and hence the digit classes will be removed.
 
 The EMNIST dataset, by default, comes in two separate training and testing sets.  However, since we are removing the digit classes, and their distribution among the default sets are unknown, we shall:
 1. Consolidate all the training samples
@@ -41,9 +41,11 @@ Note that in the usual data splitting practice, testing data accounts for 20% of
 - Keras (High level execution of deep learning models)
 - Tensorflow (Engine for deep learning models)
 - Sckit-learn (For data pre-processing)
-- Scipy (For loading dataset)
-
-- Written using Anaconda 5.0.0 (Python 3.6) in Ubuntu 16.04.3 (64-bit)
+- Scipy (For processing dataset)
+- Numpy (For loading dataset)
+- H5py (For saving Keras models)
+- Matplotlib (Optional) (For displaying image)
+- Written using Python 3.6 (64-bit)
 
 ## Results
 Results on the model performances on the validation dataset is as follows:
