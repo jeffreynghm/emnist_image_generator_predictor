@@ -42,7 +42,7 @@ class init(object):
 					
 					# Try to train the models with the specified filepaths
 					try:
-						self.__trainer_predictor_obj.train(self.__hyperparameter_layer_filepath,self.__training_parameters_filepath,self.__retrain,self.__image_generator)
+						self.__trainer_predictor_obj.train(self.__hyperparameter_layer_filepath,self.__training_parameters_filepath,self.__retrain)
 					except:
 						print("\nPlease input valid filepaths.\n")
 						continue
