@@ -56,6 +56,10 @@ For details, please refer to model_hyperparameters.txt.
     - 2 layers CNN and max pooling layer with both 64 filters
     - 2 layer feed forward layer with 128 then 64 neurons
     - Dropout of varying ratios at different layers (75%, 75%, 50%, 50%)
+11. Model 10
+    - 2 layers CNN and max pooling layer with both 64 filters
+    - 2 layer feed forward layer with 256 then 128 neurons
+    - Dropout of varying ratios at different layers (75%, 75%, 50%, 50%)
 
 ## Model Selection
 The model with the best performance on the validation set will be selected, and the performance on the testing set would be reported as the final model performance.
@@ -73,7 +77,7 @@ The EMNIST dataset, by default, comes in two separate training and testing sets.
         - Training data for (2) (80% of Training Data or 64% of Total)
         - Validation data for (2) (20% of Training Data or 16% of Total)
     - Testing Data (20% of Total)
-        - Testing dta for (2) (50% of Testing Data or 10% of Total)
+        - Testing data for (2) (50% of Testing Data or 10% of Total)
         - Training data for (1A) (50% of Testing Data or 10% of Total)
 
 Note that in the usual data splitting practice, testing data accounts for 20% of the data (subject to size of dataset).  However, since the nature of the data required by (1A) is similar to that of testing, we shall take the samples from that dataset.
@@ -92,17 +96,19 @@ Note that in the usual data splitting practice, testing data accounts for 20% of
 ## Results
 Results on the model performances on the validation dataset is as follows:
 
-Model 1: Score: 0.8683035714285714
-Model 2: Score: 0.85253609422492405
-Model 3: Score: 0.88188639817629177
-Model 4: Score: 0.85600303951367784
-Model 5: Score: 0.85804521276595747
-Model 6: Score: 0.84237272036474165
-Model 7: Score: 0.88207636778115506
-Model 8: Score: 0.86369680851063835
-Model 9: Score: 0.88231382978723405
-Model 10: Score: 0.86127469604863227
+Model 1: Score: 
+Model 2: Score: 
+Model 3: Score: 
+Model 4: Score: 
+Model 5: Score: 
+Model 6: Score: 
+Model 7: Score: 
+Model 8: Score: 
+Model 9: Score: 
+Model 10: Score: 
 
+
+# To edit
 The best result is Model 9 (88.23%), and compared to the hyperparameters of the base model, only the train epochs has increased.  This increase in model performance may therefore be due to overfitting.  As the next best alternative, Model 7 gives an accuracy of 88.21%.  This is achieved by increasing the dense layer size from 128 to 256.  We should take this model as our final model.
 
 The accuracy on the test set of this model is 87.93%.
