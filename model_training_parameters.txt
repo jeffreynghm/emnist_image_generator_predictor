@@ -1,0 +1,6 @@
+{
+'optimizer':'adam',
+'verbose':1,
+'train_batch_size':32,
+'train_epochs':10
+}

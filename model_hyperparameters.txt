@@ -1,0 +1,163 @@
+[
+[
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.25}
+],
+
+[
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.25}
+],
+
+[
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.25}
+],
+
+[
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.25}
+],
+
+[
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.25},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.25}
+],
+
+[
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.25}
+],
+
+[
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5}
+],
+
+[
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':128,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+],
+
+[
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':32, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':128,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+],
+
+[
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':128,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+{'type':'dense','dense_layer_size':64,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+],
+
+[
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'conv2d','filters':64, 'kernel_size':3,'strides':(1,1),'padding':'same','activation':'relu'},
+{'type':'maxpooling','pool_size':(2,2)},
+{'type':'dropout','dropout_ratio':0.75},
+{'type':'batchnormalization'},
+{'type':'flatten'},
+{'type':'dense','dense_layer_size':256,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+{'type':'dense','dense_layer_size':128,'activation':'relu'},
+{'type':'dropout','dropout_ratio':0.5},
+{'type':'batchnormalization'},
+]
+]
