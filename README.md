@@ -13,10 +13,52 @@ For demonstration purposes, a character handwriting recognizer (instead of an En
 2. Recognition model - built using CNN neural networks with different hyperparameters
 
 ## Models Built for the (2) Recognition Model
-1.
+Note: All models use dropout, batch normalization and relu optimization.
+For details, please refer to model_hyperparameters.txt.
+
+1. Model 0
+    - 1 layer CNN and max pooling layer with 32 filters
+    - 1 layer feed forward layer with 64 neurons
+    - Dropout of 25%
+2. Model 1
+    - 1 layer CNN and max pooling layer with 64 filters
+    - 1 layer feed forward layer with 64 neurons
+    - Dropout of 25%
+3. Model 2
+    - 2 layers CNN and max pooling layer with 64  then 32 filters
+    - 1 layer feed forward layer with 64 neurons
+    - Dropout of 25%
+4. Model 3
+    - 2 layers CNN and max pooling layer with both 64 filters
+    - 1 layer feed forward layer with 64 neurons
+    - Dropout of 25%
+5. Model 4
+    - 2 layers CNN and max pooling layer with both 32 filters
+    - 1 layer feed forward layer with 64 neurons
+    - Dropout of 25%
+6. Model 5
+    - 2 layers CNN and max pooling layer with both 32 filters
+    - 1 layer feed forward layer with 64 neurons
+    - Dropout of varying ratios at different layers (75%, 50%, 25%)
+7. Model 6
+    - 2 layers CNN and max pooling layer with both 32 filters
+    - 1 layer feed forward layer with 64 neurons
+    - Dropout of varying ratios at different layers (75%, 75%, 50%)
+8. Model 7
+    - 2 layers CNN and max pooling layer with both 32 filters
+    - 2 layer feed forward layer with 128 then 64 neurons
+    - Dropout of varying ratios at different layers (75%, 75%, 50%, 50%)
+9. Model 8
+    - 2 layers CNN and max pooling layer with 64 then 32 filters
+    - 2 layer feed forward layer with 128 then 64 neurons
+    - Dropout of varying ratios at different layers (75%, 75%, 50%, 50%)
+10. Model 9
+    - 2 layers CNN and max pooling layer with both 64 filters
+    - 2 layer feed forward layer with 128 then 64 neurons
+    - Dropout of varying ratios at different layers (75%, 75%, 50%, 50%)
 
 ## Model Selection
-The model with the best performance on the validation set will be selected, and the performance on the testing set would be reported as the final model performance.  Since we care about how accurate the model can predict the correct answer, our primary performance measurement is precision.
+The model with the best performance on the validation set will be selected, and the performance on the testing set would be reported as the final model performance.
 
 ## Dataset
 Both models take handwritten images from the EMNIST dataset[1] as training and validation data.  For simplification purposes, the EMNIST Balanced Dataset will be used.
