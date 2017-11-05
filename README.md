@@ -15,7 +15,9 @@ For demonstration purposes, a character handwriting recognizer (instead of an En
 2. Recognition model - built using CNN neural networks with different hyperparameters
 
 ## Dataset
-Both models take handwritten images from the EMNIST dataset[1] as training and validation data.  For simplification purposes, the EMNIST Balanced Dataset will be used.
+Both models take handwritten images from the EMNIST dataset[1] as training and validation data.  For simplification purposes, the EMNIST Balanced Dataset will be used, and therefore adjusting weights would not be required.
+
+The full dataset can be found at http://www.itl.nist.gov/iaui/vip/cs_links/EMNIST/matlab.zip.  As an alternative, the emnist-balanced-small.mat file under the dataset folder can be used.  However, note this is a direct shrink of the EMNIST Balanced Dataset, and therefore classes will become imbalanced.
 
 According to [1], the Balanced Dataset contains 47 classes, including both upper and lower case alphabets.  It should be noted that since characters such as s C, I, J, K, L, M, O, P, S, U, V, W, X, Y and Z have relatively similar upper and lower case letters, therefore the samples of these characters are merged into one single class (Only the Upper case class is available).  As a result, only 47 classes (including 10 digits) are available.  The focus of this demonstration is on English characters and hence the digit classes will be removed.
 
