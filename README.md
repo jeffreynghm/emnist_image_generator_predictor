@@ -134,3 +134,6 @@ This piece of program is built from scratch, however, similar pieces were later 
 
 Building GAN using Keras
 - [5] https://github.com/eriklindernoren/Keras-GAN/blob/master/gan/gan.py
+
+Building GAN using Keras-Adversarial
+- [6] https://github.com/bstriner/keras-adversarial/blob/master/examples/example_gan.py
