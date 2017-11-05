@@ -29,8 +29,16 @@ The EMNIST dataset, by default, comes in two separate training and testing sets.
     - Testing Data (20% of Total)
         - Testing data for (2) (50% of Testing Data or 10% of Total)
         - Training data for (1A) (50% of Testing Data or 10% of Total)
-
+        
 Note that in the usual data splitting practice, testing data accounts for 20% of the data (subject to size of dataset).  However, since the nature of the data required by (1A) is similar to that of testing, we shall take the samples from that dataset.
+
+Note: Another data split available in the code, but require manual uncommenting.  This split focuses on giving the GAN models more samples to train from.  The split is as follows:
+    - Data for (1B) (50% of total)
+    - Data for (2) (50% of total)
+        - Training Data for (2) (80% of 50%)
+            - Training data for (2) (80% of Training Data)
+            - Validation data for (2) (20% of Training Data)
+        - Testing Data for (2) (20% of 50%)
 
 ## Models Built for the (1B) Image Generator Model
 1. Keras Only Implementation
