@@ -1,9 +1,7 @@
 # emnist_image_generator_predictor
 
 ## Overview
-This piece of code is an attempt to the assessment task assigned by BNP Paribas for the position of AI/Digital Analyst.
-
-The selected task is: An English word image generators, then feed it to machine learning model [preferably neural network] to recognize the word from the image.
+The objective of this programme is to create English word image generators, then feed it to machine learning model [preferably neural network] to recognize the word from the image.
 
 ## Method
 For demonstration purposes, a character handwriting recognizer (instead of an English word image recognizer) is implemented.  This character handwriting recognizer composes of two separate sections:
@@ -134,7 +132,32 @@ The best result comes from Model 7 (83.62%).  The accuracy on the test set of th
 - Matplotlib (Optional) (For displaying image)
 - Written using Python 3.6 (64-bit)
 
+## Usage
+1. Install the required packages
+2. After downloading the files from github, open the folder and run:
+```
+python __init__.py ./dataset/emnist-balanced-small.mat -m ./model
+
+Note: -m ./model is optional and can be disregarded if you do not wish to load the pre-built models.
+```
+3. Upon reaching the Main Menu, you have various options to work on:
+    - Train
+        - Enter the filepaths to your specified model hyperparameters and model training parameters to train new models and add to the collection
+    - Predict
+        - Select from "basic", "keras", and "keras-adversarial" for the 3 implementations of the image generator
+        - Select a character for image generation and prediction
+    - Save
+        - Save the current model collection to a folder
+    - Load
+        - Load a model collection from a folder
+        - Loading the model at the Main Menu immediately after entering the Main Menu is equivalent to specifying -m ./model
+    - Results
+        - Display the validation scores of the models in the current model collection
+    - Exit
+        - Exit the programme and return to command line
+
 ## Reference
+Dataset
 - [1] Cohen, G., Afshar, S., Tapson, J., & van Schaik, A. (2017). EMNIST: an extension of MNIST to handwritten letters. Retrieved from http://arxiv.org/abs/1702.05373
 
 This piece of program is built from scratch, however, similar pieces were later identified on the internet.  These include:
